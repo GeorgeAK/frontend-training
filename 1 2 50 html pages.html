@@ -1,0 +1,833 @@
+<!--le 1 - HTML | HTML Features-->
+<!-- ●
+ Simple HTML page
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>
+ Page Title</title>
+ </head>
+ <body>
+ <h1>
+ My First Heading</h1>
+ <p>
+ My first paragraph.</p>
+ </body>
+ </html>
+
+ 
+ 12
+
+● Creating first HTML web page
+ a. Open an editor - VSCode / Notepad / TextEdit etc
+ b. Write the code shown in previous slide
+ c. Save it with a name with .html extension. Example: “introduction.html”
+ d. View the page in your browser
+ i. By selecting file -> Open -> locate and select the same file in your browser
+ ii. Or by copying the path of the file location and pasting in the URL field of a 
+browser window to open the page
+ Module 1 - HTML | HTML Features
+ 13
+Module 1 - HTML | HTML Features
+ ●
+ ●
+ ●
+ ●
+ ●
+ ●
+ ●
+ The 
+<!DOCTYPE html> 
+declaration defines that this document is an HTML5 
+document - 
+Optional
+ The
+ <html>
+ element is the root element of an HTML page
+ The 
+<head>
+ element contains meta information about the HTML page
+ The 
+<title>
+ element specifies a title for the HTML page (which is shown in the 
+browser's title bar or in the page's tab)
+ The 
+<body>
+ element defines the document's body, and is a container for all the 
+visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, 
+etc.
+ The 
+<h1>
+ element defines a large heading
+ The <p>
+ element defines a paragraph
+ 14
+What is an HTML Element?
+ An HTML element is defined by a start tag, some content, and an end tag:
+ ● <tagname> Content goes here... </tagname>
+ ● The HTML element is everything from the start tag to the end tag:
+ ● <h1>My First Heading</h1>
+ ● <p>My first paragraph.</p>
+ Module 1 - HTML | HTML Features
+ Start Tag Element Content End Tag
+ <h1> My First Heading </h1>
+ <p> My First Paragraph </p>
+ <br> none none 15
+What is an HTML Attributes/Properties?
+ ● All HTML elements can have attributes
+ ● Attributes provide additional information about elements
+ ● Attributes are always specified in the start tag
+ ● Attributes usually come in name/value pairs like: name="value"
+ ● Example:
+ a. Anchor tag
+ i. <a href="https://www.w3schools.com">Visit W3Schools</a>
+ ii. Absolute URL - https://www.w3schools.com 
+iii. Relative URL - src="/images/img_girl.jpg”
+ b. Image tag
+ i. <img src="img_girl.jpg">
+ ii. <img src="img_girl.jpg" width="500" height="600">
+ iii. <img src="img_girl.jpg" alt="Girl with a jacket">
+ c. Others
+ i. <p style="color:red;">This is a red paragraph.</p>
+ Module 1 - HTML | HTML Features
+ 16
+Web Browser
+ The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and 
+display them correctly.
+ A browser does not display the HTML tags, but uses them to determine how to display the document:
+ Module 1 - HTML | HTML Features
+ 17
+HTML Page Structure
+ Module 1 - HTML | HTML Features
+ <html>
+ </html>
+ <head>
+ </head>
+ <body>
+ </body>
+ <title> Page title </title>
+ <h1> This is a heading </h1>
+ <P> This is a paragraph </p>
+ 18
+Module 1 - HTML | Introduction to HTML
+ ●
+ Evolution of HTML
+ 19
+● XML example
+ Module 1 - HTML | HTML Features
+ 20
+● XHTML
+ a. Tags need to be in lowercase.
+ b. Codes must be well-formed
+ c. XML parser will stop 
+processing if it encounters a 
+situation where the syntax is 
+not well-formed
+ Module 1 - HTML | HTML Features
+ ● HTML
+ a. Case user doesn’t matter
+ b. Unmatched quotation marks, 
+non-terminated and 
+uncontained elements are 
+allowed
+ c. Syntax is less rigorous than 
+XHTML syntax
+ 21
+Module 1 - HTML | Intro to HTML (JSFiddle)
+ ●
+ https://jsfiddle.net/
+ 22
+Module 1 - HTML | Working with HTML
+ Let’s create these elements in our new website now:
+ ●
+ ●
+ ●
+ ●
+ ●
+ ●
+ ●
+ ●
+ Headings
+ Paragraph
+ Horizontal line
+ Line break
+ Hyperlink / Anchor
+ List
+ Table
+ Image
+ 23
+Module 1 - HTML | Working with HTML
+ Heading Tag
+ -->
+ <!--
+ <html>
+ <head>
+ <title>25th Sept</title>
+ </head>
+ <body>
+ <h1>Heading with h1</h1>
+ <h2>Heading with h2</h2>
+ <h3>Heading with h3</h3>
+ <h4>Heading with h4</h4>
+ <h5>Heading with h5</h5>
+ <h6>Heading with h6</h6>
+ <h7>Heading with h7</h7>
+ </body>
+ </html>
+ 24
+Module 1 - HTML | Working with HTML
+ Heading Tag
+-->
+ <!--
+ <title>25th Sept</title>
+ </head>
+ <html>
+ <head>
+ <body>
+ <p>This is my first html page testing with different tags <br> This is my first 
+html page testing with different tags </p>
+ <p>This paragraph
+ contains a lot of lines
+ in the source code,
+ but the browser 
+ignores it.</p>
+ <p>This paragraph
+ contains      a lot of spaces
+ in the source     code,
+ but the    browser 
+ignores it.</p>
+ <p>The number of lines in a paragraph depends on the size of the browser window. 
+If you resize the browser window, the number of lines in this paragraph will 
+change.</p>
+ </body>
+ </html>
+ 25
+Module 1 - HTML | Working with HTML
+ Horizontal line & Line break
+-->
+ <!--
+ <html>
+ <head>
+ <title>25th Sept</title> </head>
+ <body>
+ <p>This is my first html page testing with different tags <br> This is 
+my first html page testing with different tags</p>
+ <hr>
+ <p>The number of lines in a paragraph depends on the size of the browser 
+window. If you resize the browser window, the number of lines in this 
+paragraph will change.</p>
+ </body>
+ </html>
+
+ 
+ 26
+
+Module 1 - HTML | Working with HTML
+ Problem with P tag:
+ A Poem will be shown in a single line:
+-->
+ <!--
+ <p>
+  My Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+  My Bonnie lies over the ocean.
+  Oh, bring back my Bonnie to me.
+ </p>
+ 27
+Module 1 - HTML | Working with HTML
+ Problem with P tag:
+ A Poem will be shown in a single line:
+ <p>
+  My Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+  My Bonnie lies over the ocean.
+  Oh, bring back my Bonnie to me.
+ </p>
+-->
+ <!--
+
+ Solution: pre tag - 
+element defines preformatted text. The text inside a <pre>
+ (usually Courier), and it preserves both spaces and line breaks
+-->
+ <!--
+ <pre>
+  My Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+  My Bonnie lies over the ocean.
+  Oh, bring back my Bonnie to me.
+ </pre>
+-->
+ <!--
+ element is displayed in a fixed-width font 
+28
+Module 1 - HTML | Working with HTML
+ Anchor tag
+-->
+ <!--
+ <html>
+ <head>
+ <title>25th Sept</title>
+ </head>
+ <body>
+ <p>This is my first html page testing with different tags <br> This is 
+my first html page testing with different tags</p>
+ <a href="https://uraansoftskills.com" target="_blank">Uraan 
+Softskills</a>
+ </body>
+ </html>
+-->
+ <!--
+ 29
+Module 1 - HTML | Working with HTML
+ Lists (Ordered list)
+ Here if the start is specified, it will start from there
+-->
+ <!--
+ <html>
+ <head>
+ <title>25th Sept</title>
+ </head>
+ <body>
+ <ol>
+ <li>Abc</li>
+ <li>Def</li>
+ <li>Ghi</li>
+ <li>Jkl</li>
+ <li>Mno</li>
+ </ol>
+ </body>
+ </html>
+-->
+ <!--
+ 30
+Module 1 - HTML | Working with HTML
+ Lists (Unordered list)
+ Here the type of the bullet could be changed by ...?
+-->
+ <!--
+ <html>
+ <head>
+ <title>25th Sept list</title>
+ </head>
+ <body>
+ <ul>
+ <li>Abc</li>
+ <li>Def</li>
+ <li>Ghi</li>
+ <li>Jkl</li>
+ <li>Mno</li>
+ </ul>
+ </body>
+ </html>
+-->
+<!--
+ 31
+<!--
+Table
+-->
+<!--
+ <html>
+ <head> <title>25th Sept</title> </head>
+ <body>
+ <table>
+ <tr> <th>Heading 1</th> <th>Heading 2</th> <th>Heading 3</th> </tr>
+ <tr> <td>Data 1</td> <td>Data 2</td> <td>Data 3</td> </tr>
+ <tr> <td>Data 1</td> <td>Data 2</td> <td>Data 3</td> </tr>
+ </table>
+ </body>
+ </html>
+-->
+<!--
+ Module 1 - HTML | Working with HTML
+ 32
+Module 1 - HTML | Working with HTML
+ Image tag
+-->
+ <!--
+ <html>
+ <head>
+ <title>25th Sept</title>
+ </head>
+ <body>
+ <img 
+src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India
+ _vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" 
+width="100" 
+height="100">
+ <img src="img1.png" width="200" height="200">
+ <img src = "akg.jpg" width ="150 height = "200">
+ </body>
+ </html>
+-->
+ <!--
+ 33
+Module 1 - HTML | Working with HTML
+ div tag
+ a.
+ b.
+ form tag
+ c.
+ d.
+ Used as a section or section in the HTML document
+ Example: 
+A form is used to create an HTML form for user input
+ A form can have these in it:
+ i.
+ ii.
+ iii.
+ iv.
+ v.
+ vi.
+ vii.
+ viii.
+ <input>
+ <textarea>
+ <button>
+ <select>
+ <option>
+ <optgroup>
+ <fieldset>
+ <label>
+ 34
+ 
+Module 1 - HTML | Working with HTML
+ -->
+<!--
+ ● <input type="button">
+ ● <input type="checkbox">
+ ● <input type="color">
+ ● <input type="date">
+ ● <input type="datetime-local">
+ ● <input type="email">
+ ● <input type="file">
+ ● <input type="hidden">
+ ● <input type="image">
+ ● <input type="month">
+ ● <input type="number">
+ ● <input type="password">
+ ● <input type="radio">
+ ● <input type="range">
+ ● <input type="reset">
+ ● <input type="search">
+ ● <input type="submit">
+ ● <input type="tel">
+ ● <input type="text"> (default value)
+ ● <input type="time">
+ ● <input type="url">
+ ● <input type="week"> 35
+ -->
+ <!--
+Module 1 - HTML | Working with HTML
+ <label>This is text label This is text label This is text label This is text label 
+This is text label This is text label This is text label This is text label This is 
+text label This is text label </label>
+ <textarea rows="4" cols="50">This is text label This is text label This is text label 
+This is text label This is text label This is text label This is text label This is 
+text label This is text label This is text label </textarea>
+ 36
+Module 1 - HTML | Working with HTML
+ -->
+<!--
+ <label for="cars">Choose a car:</label>
+ <select name="cars" id="cars">
+ <option value="volvo">Volvo</option>
+ <option value="saab">Saab</option>
+ <option value="mercedes">Mercedes</option>
+ <option value="audi">Audi</option>
+ </select>
+-->
+ <!--
+ 37
+Module 1 - HTML | Working with HTML
+-->
+<!--
+ <label for="cars">Choose a car:</label>
+ <select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+ </select>
+-->
+ <!--
+ 38
+Module 1 - HTML | Working with HTML
+??????Should the for = and id = and name = be the same??????????
+-->
+<!--
+ <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <input type="submit" value="Submit">
+ </fieldset>
+-->
+ <!--
+ 39
+Module 1 - HTML | Creating some HTML pages
+ Task
+ ●
+ ●
+ ●
+ ●
+ Sign up page
+ a.
+ What all do we need?
+ Login page
+ a.
+ What all do we need?
+ Profile view page
+ a.
+ What all do we need?
+ Profile edit page
+ a.
+ What all do we need?
+ 40
+Task
+ ● Sign up page
+ a. User perspective
+ i. Name
+ ii. Username
+ iii. Email id
+ iv. Contact number
+ v. DOB
+ vi. Gender
+ vii. Address
+ viii. Password (abc123 -> avc124)& Confirm password (abc123)
+ ix. Already have an account? Login here
+ b. Developer’s perspective
+ i. Form, Submit button, Labels, Input elements, date picker, Radio button
+ ii. Fieldset
+ ● Login page
+ a. What all do we need?
+ ● Profile view page
+ a. What all do we need?
+ ● Profile edit page
+ a. What all do we need?
+ Module 1 - HTML | Creating some HTML pages
+ 41
+Module 1 - HTML | Creating some HTML pages
+ Task
+ ●
+ ●
+ ●
+ ●
+ Sign up page
+ Login page
+ a.
+ What all do we need?
+ i.
+ User’s Perspective
+ 1.
+ 2.
+ 3.
+ 4.
+ ii.
+ Email Id/Username
+ Password
+ Remember me next time
+ Don’t have an account? Sign up
+ Developer’s Perspective
+ 1.
+ Form, fieldset (optional)
+ 2.
+ Profile view page
+ a.
+ Input tag (email, Password, text, checkbox, & Button)
+ What all do we need?
+ Profile edit page
+ What all do we need?
+ a.
+ 42
+Task
+ ● Login page
+ ● Sign up page
+ ● Profile view page
+ a. User perspective
+ i. Name
+ ii. Profile Picture
+ iii. Username
+ iv. Email id
+ v. Contact number
+ vi. DOB
+ vii. Gender
+ viii. Address
+ ix. Hobbies
+ x. Last Education
+ xi. Edit Profile
+ b. Developer’s 
+i. img, a, labels, div, Button
+ ● Profile edit page
+ Module 1 - HTML | Creating some HTML pages
+ 43
+Module 1 - HTML | Creating some HTML pages
+ ●
+ ●
+ ●
+ ●
+ Login page
+ Sign up page
+ Profile view page
+ Profile edit page
+ a.
+ b.
+ User perspective
+ i.
+ Name
+ ii.
+ iii.
+ iv.
+ v.
+ vi.
+ vii.
+ viii.
+ ix.
+ x.
+ xi.
+ Profile Picture
+ Username
+ Email id
+ Contact number
+ DOB
+ Gender
+ Address
+ Hobbies
+ Last Education
+ Update profile button
+ Developer’s perspective
+ i.
+ 44
+ Input [text, date, submit, tel, radio/select-option, ], img, fieldset (optional)
+Module 1 - HTML | Creating some HTML pages
+ ●
+ ●
+ ●
+ ●
+ ●
+ Login page
+ Sign up page
+ Profile view page
+ Profile edit page
+ Now, What should be the flow among these pages?
+ 45
+Module 1 - HTML | Creating some HTML pages
+ ●
+ ●
+ ●
+ ●
+ ●
+ Login page
+ Sign up page
+ Profile view page
+ Profile edit page
+ Now, What should be the flow among these pages?
+ a.
+ Login -> Sign up -> Login -> View profile -> Edit profile
+ i.
+ Login -> View profile, Sign up
+ ii.
+ iii.
+ Sign up -> View profile, login
+ View Profile -> Edit profile, Login(Logout)
+ 46
+-->
+ <!--
+HTML Styles
+ The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+ Syntax: <tagname style="property:value;">
+ Example: 
+—-----—-----—-----—-----—-----—-----—-----—-----—-----—-----—----
+ -->
+<!--
+<body style="background-color:powderblue;">
+ <h1>This is a heading</h1>
+ <p>This is a paragraph.</p>
+ </body>
+ —-----—-----—-----—-----—-----—-----—-----—-----—-----—-----—----
+<body>
+ <h1 style="background-color:powderblue;">This is a heading</h1>
+ <p style="background-color:tomato;">This is a paragraph.</p>
+ </body>
+ —-----—-----—-----—-----—-----—-----—-----—-----—-----—-----—----
+<h1 style="color:blue;">This is a heading</h1>
+ <p style="color:red;">This is a paragraph.</p>
+-->
+ <!--
+ Module 1 - HTML | Working with HTML
+ 47
+HTML Styles
+ The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+ Syntax: <tagname style="property:value;">
+ Example: 
+—-----—-----—-----—-----—-----—-----—-----—-----—-----—-----—----
+ -->
+<h1 style="font-family:verdana;">This is a heading</h1>
+ <p style="font-family:courier;">This is a paragraph.</p>
+ —-----—-----—-----—-----—-----—-----—-----—-----—-----—-----—----
+<h1 style="font-size:300%;">This is a heading</h1>
+ <p style="font-size:160%;">This is a paragraph.</p>
+ —-----—-----—-----—-----—-----—-----—-----—-----—-----—-----—----
+<h1 style="text-align:center;">Centered Heading</h1>
+ <p style="text-align:center;">Centered paragraph.</p>
+<!--
+ Module 1 - HTML | Working with HTML
+ 48
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed 
+ to display special types of text:
+ Elements: 
+<b> - Bold text
+ <strong> - Important text
+ <i> - Italic text
+ <em> - Emphasized text
+ <mark> - Marked text
+ <small> - Smaller text
+ <del> - Deleted text
+ <ins> - Inserted text
+ <sub> - Subscript text
+ <sup> - Superscript text
+ 49
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<b> - Bold text. The HTML <b> element defines bold text, without any extra importance
+ Example:
+ <b>This text is bold</b>
+ 50
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<b>This text is bold</b>
+<strong> - Important text. The HTML <strong> element defines text with strong importance. The 
+content inside is typically displayed in bold.
+ Example:
+ <strong>This text is important!</strong>
+ 51
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<i> - Italic text. The HTML <i> element defines a part of text in an alternate voice or mood. The 
+content inside is typically displayed in italic. The <i> tag is often used to indicate a technical term, a 
+phrase from another language, a thought, a ship name, etc.
+ <em> - Emphasized text. The HTML <em> element defines emphasized text. The content inside is 
+typically displayed in italic.
+ Tip: A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+ Example:
+ <i>This text is italic</i>
+ <em>This text is emphasized</em>
+ 52
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<small> - Smaller text. The HTML <small> element defines smaller text
+ Example:
+ <small>This is some smaller text.</small>
+ 53
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<mark> - Marked text. The HTML <mark> element defines text that should be marked or highlighted
+ Example:
+ <p>Do not forget to buy <mark>milk</mark> today.</p>
+ 54
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<del> - Deleted text. The HTML <del> element defines text that has been deleted from a document. 
+Browsers will usually strike a line through deleted text:
+ Example:
+ <p>My favorite color is <del>blue</del> red.</p>
+ 55
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<ins> - Inserted text. The HTML <ins> element defines a text that has been inserted into a 
+document. Browsers will usually underline inserted text:
+ Example:
+ <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+ 56
+Module 1 - HTML | Working with HTML
+ HTML Text Formatting
+ HTML contains several elements for defining text with a special meaning.
+ Formatting elements were designed to display special types of text:
+ Elements: 
+<sub> - Subscript text. The HTML <sub> element defines subscript text. Subscript text appears half a 
+character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be 
+used for chemical formulas, like H2O:
+ <sup> - Superscript text. The HTML <sup> element defines superscript text. Superscript text appears 
+half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text 
+can be used for footnotes, like WWW[1]:
+ Example:
+ <p>This is <sub>subscripted</sub> text.</p>
+ <p>This is <sup>superscripted</sup> text.</p>
+ 57
+Module 1 - HTML | Working with HTML
+ HTML Quotation & Citation Elements
+ Elements: 
+<blockquote> - Quotations
+ <q> - short quotation.
+ <abbr> - abbreviation or acronym
+ <address> - contact information
+ <cite> - title of a creative work
+ <bdo> - BDO stands for Bi-Directional Override. override the current text direction
+ 58
+Module 1 - HTML | Working with HTML
+ HTML Quotation & Citation Elements
+ Elements: 
+<blockquote> - Quotations
+ <q> - short quotation.
+ <abbr> - abbreviation or acronym
+ Example:
+ <p>Here is a quote from WWF's website:</p>
+ <blockquote cite="http://www.worldwildlife.org/who/index.html">
+ For 60 years, WWF has worked to help people and nature thrive. As the world's leading 
+conservation organization, WWF works in nearly 100 countries. At every level, we 
+collaborate with people around the world to develop and deliver innovative solutions 
+that protect communities, wildlife, and the places in which they live.
+ </blockquote>
+ <p>WWF's goal is to: <q>Build a future where people live in harmony with 
+nature.</q></p>
+ <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+ 59
+Module 1 - HTML | Working with HTML
+ HTML Quotation & Citation Elements
+ Elements: 
+<address> - contact information
+ <cite> - title of a creative work
+ <bdo> - BDO stands for Bi-Directional Override. override the current text direction
+ Example:
+ <address>
+ Written by John Doe.<br>
+ Visit us at:<br>
+ Example.com<br>
+ Box 564, Disneyland<br>
+ USA
+ </address>
+ <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+ <bdo dir="rtl">This text will be written from right to left</bdo>

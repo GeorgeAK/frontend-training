@@ -1,0 +1,117 @@
+from 32 onwards
+
+ <html>
+ <head>
+ <title>25th Sept</title>
+ </head>
+ <body>
+ <img 
+src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Virat_Kohli_during_the_India
+ _vs_Aus_4th_Test_match_at_Narendra_Modi_Stadium_on_09_March_2023.jpg" 
+width="100" 
+height="100">
+ <img src="img1.png" width="200" height="200">
+ </body>
+ </html>
+
+
+
+
+ div tag
+ a.
+ b.
+ form tag
+ c.
+ d.
+ Used as a section or section in the HTML document
+ Example: 
+A form is used to create an HTML form for user input
+ A form can have these in it:
+ i.
+ ii.
+ iii.
+ iv.
+ v.
+ vi.
+ vii.
+ viii.
+ <input>
+ <textarea>
+ <button>
+ <select>
+ <option>
+ <optgroup>
+ <fieldset>
+ <label>
+
+
+
+
+
+ ● <input type="button">
+ ● <input type="checkbox">
+ ● <input type="color">
+ ● <input type="date">
+ ● <input type="datetime-local">
+ ● <input type="email">
+ ● <input type="file">
+ ● <input type="hidden">
+ ● <input type="image">
+ ● <input type="month">
+ ● <input type="number">
+ ● <input type="password">
+ ● <input type="radio">
+ ● <input type="range">
+ ● <input type="reset">
+ ● <input type="search">
+ ● <input type="submit">
+ ● <input type="tel">
+ ● <input type="text"> (default value)
+ ● <input type="time">
+ ● <input type="url">
+ ● <input type="week">
+
+
+
+ <label>This is text label This is text label This is text label This is text label 
+This is text label This is text label This is text label This is text label This is 
+text label This is text label </label>
+ <textarea rows="4" cols="50">This is text label This is text label This is text label 
+This is text label This is text label This is text label This is text label This is 
+text label This is text label This is text label </textarea>
+
+
+
+
+ <label>This is text label This is text label This is text label This is text label 
+This is text label This is text label This is text label This is text label This is 
+text label This is text label </label>
+ <textarea rows="4" cols="50">This is text label This is text label This is text label 
+This is text label This is text label This is text label This is text label This is 
+text label This is text label This is text label </textarea>
+
+
+
+
+
+ <label for="cars">Choose a car:</label>
+ <select name="cars" id="cars">
+ <option value="volvo">Volvo</option>
+ <option value="saab">Saab</option>
+ <option value="mercedes">Mercedes</option>
+ <option value="audi">Audi</option>
+ </select>
+
+
+
+<label for="cars">Choose a car:</label>
+ <select  name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+ </select>
