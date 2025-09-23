@@ -1,0 +1,28 @@
+<html>
+<head><title>Working with HTML</title>
+<style type="css">
+    h1 {
+        background-color: lightblue;
+    }
+    p {
+        background-color: yellowgreen;
+    }
+    #Gid
+    {
+        text-align:center;color:red;
+    }
+    .Gclassid
+    {
+        text-align:end;color:purple;
+    }
+    table.Gclassid
+    {
+        text-align:center;color:crimson;
+    }
+    *{
+        margin: 5 pix;
+        padding: 2 pix;
+    }
+</style>
+</head>
+</html>
