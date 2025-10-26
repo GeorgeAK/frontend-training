@@ -369,3 +369,17 @@
 //         if(prime)
 //             console.log(num, end = " ")
 // }
+
+function findbig(a,b)
+{
+    if(!a instanceof(Number)||!b instanceof(Number))
+    {
+        console.log("Enter proper number")
+        return
+    }
+    if(a > b)
+        return(a)
+    return(b)
+}
+big = (findbig(20,30))
+console.log("big is ",big)
