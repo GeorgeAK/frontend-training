@@ -238,66 +238,73 @@
 // for(a of contacts)
 //     console.log(a)
 
-////////////// switch case and contact updation//////////////////
-// let contacts = [{name:"George",age:64},{name:"Thomas",age:65},
-//     {name:"John",age:70},{name:"Francis",age:80}]
-// function showContact(contacts,i)
-// {
-//     if(!contacts instanceof Array)
-//         console.log("contacts is not array")
-//     else
-//     //if(contacts isInstanceof Array)
-//     console.log(contacts[i])
-// }
-// function addContact(contacts,name,age)
-// {
-//     if(!contacts instanceof Array)
-//         console.log("contacts is not array")
-//     else
-//         console.log("Adding")
-// }
-// let cont = 1
-// for(;;)
-// {
-//     let opt = Number(prompt("enter a choice 1.  first    2. last 3. all 4. add contact. -n. exit"))
-//     //alert("your option is "+opt)
-//     console.log("Your option is "+opt)
-//     if(opt < 0)
-//       break
-//     switch(opt)
-//     {
-//         case 1:// to show the first contact
-//             //console.log(contacts[0])
-//             showContact(contacts,0)
-//             break;
-//         case 2:// to show the last 3 contacts
-//             //console.log(contacts[contacts.length-1])
-//             for(let i=contacts.length-4;i<contacts.length-1;i++)
-//                 showContact(contacts,i)
-//             break;
-//         case 3:// to show all contacts
-//             //for( c of contacts)
-//             //    console.log(c)
-//             for( i =0;i<contacts.length;i++)
-//               showContact(contacts,i)
-//             break
-//         case 4:// to add contact
-//         //     let name1 = prompt("Enter the name");
-//         //     let age = Number(prompt("Enter the age"))
-//         //     //let str = "[{'name':"+name1 + "age :"+age+"}]"// try on my own
-//         //     //let st = " My name is "+nam1+ " and i am a teacher"
-//             let name1 = prompt("Enter the name");
-//             let age = Number(prompt("Enter the age"))
-//             let str = "{name: "+"'"+ name1+"'"+ ","+ "age :" + age +"}"///still not right
-//             contacts.push(str)
-//             //addContact(contacts,"George",65);//name1,age)
-//             break
-            
-//         default:
-//             alert("Enter a valid choice")
-//     }
-//     //cont = Number(prompt("Continue 1/0"))
-// }
+//////////// switch case and contact updation//////////////////
+let contacts = [{name:"George",age:64},{name:"Thomas",age:65},
+    {name:"John",age:70},{name:"Francis",age:80}]
+function showContact(contacts,i)
+{
+    if(!contacts instanceof Array)
+        console.log("contacts is not array")
+    else
+    //if(contacts isInstanceof Array)
+    console.log(contacts[i])
+}
+function addContact(contacts,name,age)
+{
+    if(!contacts instanceof Array)
+    {
+        console.log("contacts is not array")
+        return// these returns are not properly working
+    }
+    else if(!name instanceof String)
+    {
+        console.log("Name is not proper")
+        return// these returns are not properly working
+    }
+    else if(!age instanceof Number)
+    {
+        console.log("age is to be a proper integer")
+        alert("age is to be a proper integer")
+        return// these returns are not properly working
+    }
+    else
+    {
+        console.log("Adding")
+        contacts.push({"name":name,"age":age})
+    }
+}
+let cont = 1
+for(;;)
+{
+    let opt = Number(prompt("enter a choice 1.  first    2. last 3. all 4. add contact. -n. exit"))
+    //alert("your option is "+opt)
+    //console.log("Your option is "+opt)
+    if(opt < 0)
+      break
+    switch(opt)
+    {
+        case 1:// to show the first contact
+            showContact(contacts,0)
+            break;
+        case 2:// to show the last 3 contacts
+            //console.log(contacts[contacts.length-1])
+            for(let i=contacts.length-4;i<contacts.length-1;i++)
+                showContact(contacts,i)
+            break;
+        case 3:// to show all contacts
+            for( i =0;i<contacts.length;i++)
+              showContact(contacts,i)
+            break
+        case 4:// to add contact
+            let name1 = prompt("Enter the name");
+            let age = Number(prompt("Enter the age"))
+            addContact(contacts,name1,age)
+            break    
+        default:
+            alert("Enter a valid choice")
+    }
+    //cont = Number(prompt("Continue 1/0"))
+}
 ///// summorial of a given number
 // function sumup(n)
 // {
@@ -309,14 +316,8 @@
 // console.log("Now the fact of summorial of 5 is",sumup(5))
 
 //// an arrow function to return sum of 3 numbers
-let sum3= (a,b,c) => a+b+c
-console.log("sum of 3 nums by arrow ",sum3(4,5,6))
+// let sum3= (a,b,c) => a+b+c
+// console.log("sum of 3 nums by arrow ",sum3(4,5,6))
 
-// for (c of contacts)
-//     console.log(c)
-// console.log(contacts[0])
-// console.log(contacts[contacts.length-1])
-// contacts.push({name:"Kathu",age:50})
-// for(a of contacts)
-//     console.log(a)
+
 
