@@ -10,7 +10,7 @@ console.log("Last Two bolls: ");
 lastTwoBooks.forEach(book=>console.log(book.title));
 library.shift();
 console.log("After removeing first book : ");
-console.log("librray lenght ",library.length);
+console.log("libray length ",library.length);
 library.forEach(book=>console.log(book.title));
 let totalPages = library.reduce((sum,book)=>sum+book.pages,0);
 console.log("Total pages in collection: ",totalPages);

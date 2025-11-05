@@ -370,16 +370,107 @@
 //             console.log(num, end = " ")
 // }
 
-function findbig(a,b)
-{
-    if(!a instanceof(Number)||!b instanceof(Number))
-    {
-        console.log("Enter proper number")
-        return
-    }
-    if(a > b)
-        return(a)
-    return(b)
-}
-big = (findbig(20,30))
-console.log("big is ",big)
+// function findbig(a,b)
+// {
+//     if(!a instanceof(Number)||!b instanceof(Number))
+//     {
+//         console.log("Enter proper number")
+//         return
+//     }
+//     if(a > b)
+//         return(a)
+//     return(b)
+// }
+// big = (findbig(20,30))
+// console.log("big is ",big)
+
+
+
+
+// let library =[{title: "Speaking JavaScript",author:"Axel Rauschmayer",pages:460},{title:"Programming JavaSriptt Application",author: "Aric Elliott",pages:254},{title:"Understandign ECMAScript 6",author:"Nicholas C. Zakas",pages:352}];
+// console.log(library)
+// library.push({titel:"Learning JavaScript Design Patterns",author: "Addy Osmani",pages:254})
+// console.log("Libray length:",library.length)
+// console.log("Books in the library: ");
+// library.forEach(book=>console.log(book.title));
+
+// let lastTwoBooks=library.slice(-2);
+// console.log("Last Two bolls: ");
+// lastTwoBooks.forEach(book=>console.log(book.title));
+// library.shift();
+// console.log("After removeing first book : ");
+// console.log("librray lenght ",library.length);
+// library.forEach(book=>console.log(book.title));
+// let totalPages = library.reduce((sum,book)=>sum+book.pages,0);
+// console.log("Total pages in collection: ",totalPages);
+
+// let contacts = [{name:"George",age:64},{name:"Thomas",age:65},
+//     {name:"John",age:70},{name:"Francis",age:80}]
+// // for (c of contacts)
+// //     console.log(c)
+// console.log(contacts[0])
+// console.log(contacts[contacts.length-1])
+// contacts.push({name:"Kathu",age:50})
+// for(a of contacts)
+//     console.log(a)
+
+////////////////// switch case and contact updation//////////////////
+// let contacts = [{name:"George",age:64},{name:"Thomas",age:65},
+//     {name:"John",age:70},{name:"Francis",age:80}]
+// let cont = 1
+// for(;cont;)
+// {
+//     let opt = Number(prompt("enter a choice 1.  first    2. last 3. all 4. exit"))
+//     //alert("your option is "+opt)
+//     switch(opt)
+//     {
+//         case 1:
+//             console.log(contacts[0])
+//             break;
+//         case 2:
+//             console.log(contacts[contacts.length-1])
+//             break;
+//         case 3:
+//             for( c of contacts)
+//                 console.log(c)
+//             break
+//         case 4:
+//             let name1 = prompt("Enter the name");
+//             let age = Number(prompt("Enter the age"))
+//             //let str = "[{'name':"+name1 + "age :"+age+"}]"// try on my own
+//             //let st = " My name is "+nam1+ " and i am a teacher"
+//             let str = "{name: "+ name1+ "age :" + age +"}"///still not right
+//              contacts.push(str)
+//             // for(a of contacts)
+//             //     console.log(a)
+//             break
+            
+//         default:
+//             alert("Enter a valid choice")
+//     }
+//     cont = Number(prompt("Continue 1/0"))
+// }
+
+
+// for (c of contacts)
+//     console.log(c)
+// console.log(contacts[0])
+// console.log(contacts[contacts.length-1])
+// contacts.push({name:"Kathu",age:50})
+// for(a of contacts)
+//     console.log(a)
+
+
+///////////////homework on 15  10  25  wednesday////////////////////
+//// //////////   1 to print first 10 even numbers  /////////////////
+// let count = 0
+// for(let n = 1;count <10;n++)
+//     if(n%2 == 0)
+//     {
+//         count++;
+//         console.log(n)
+//     }
+
+
+
+
