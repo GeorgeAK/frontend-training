@@ -1,0 +1,173 @@
+<!--function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("Demo").value;
+  try {
+    if(x.trim() == "") throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 10) throw "is too high";
+    if(x < 5) throw "is too low";
+  } catch(err) {
+    message.innerHTML = "Error: " + err + ".";
+  } finally {
+    document.getElementById("Demo").value = "";
+  }
+}
+-->
+<!--
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Java Script Error </h1>
+            <h2> Java Script Try Catch</h2>
+            <p>Please Input a number btwn 5 and 10</p>
+ <button onclick="helloworld()">Hello world</button>
+        <button onclick="confirmDialog1()">Confirmation decision </button>
+        <body>
+            <input id="myid"
+            type="text"/>
+        <button type = button onclick="Console.log("Button Clicked")</button>
+            <input id="myid"
+            type="text"/>
+            <button
+           onclick="console.log('input value :',document.getElementById('myid').value)">
+            <button type = "button"
+            onclick="myFunction()">
+            Get Text
+            </button>       
+        
+           <!--<button type = "button" onclick = "myFunction()"> Test Input</button>
+           // <input id="Demo" type = "text">
+            //<p id = "p01"></p>
+            <script >
+            //const input = ""
+                function myFunction()
+                {
+                    const message = document.getElementById("p01");
+                    message.innerHTML = "";
+                    let x = document.getElementById("Demo").value;
+                    try
+                    {
+                        if(x.trim() == "") throw "is Empty";
+                        if(isNaN(x)) throw "is not number";
+                        x = Number(x);
+                        if(x > 10) throw "is too high";
+                        if(x < 5) throw "is too low";
+                    }
+                    catch(error1)
+                    {
+                        message.innerHTML = input + error1
+                    }
+                    finally
+                    {
+                        document.getElementById("Demo").value = "";
+                    }
+                }
+            </script>
+    </body>
+</html>
+-->
+
+
+<!--<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Java Script Error </h1>
+            <h2> Java Script Try Catch</h2>
+            <p>Please Input a number btwn 5 and 10</p>
+ <button onclick="helloworld()">Hello world</button>
+        <button onclick="confirmDialog1()">Confirmation decision </button>
+        <body>
+            <input id="myid"
+            type="text"/>
+        <button type = button onclick="Console.log("Button Clicked")</button>
+            <input id="myid"
+            type="text"/>
+            <button
+           onclick="console.log('input value :',document.getElementById('myid').value)">
+            <button type = "button"
+            onclick="myFunction()">
+            Get Text
+            </button>       
+        
+           <button type = "button" onclick = "myFunction()"> Test Input</button>
+           // <input id="Demo" type = "text">
+            //<p id = "p01"></p>
+            <script >
+            //const input = ""
+                function myFunction()
+                {
+                    const message = document.getElementById("p01");
+                    message.innerHTML = "";
+                    let x = document.getElementById("Demo").value;
+                    try
+                    {
+                        if(x.trim() == "") throw "is Empty";
+                        if(isNaN(x)) throw "is not number";
+                        x = Number(x);
+                        if(x > 10) throw "is too high";
+                        if(x < 5) throw "is too low";
+                    }
+                    catch(error1)
+                    {
+                        message.innerHTML = input + error1
+                    }
+                    finally
+                    {
+                        document.getElementById("Demo").value = "";
+                    }
+                }
+            </script>
+    </body>
+-->
+<!--////////////// Throwing Errors ////////////////-->
+
+<!--- THIS IS NOW WORKING -->
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Error</h1>
+<h2>JavaScript Try Catch</h2>
+<p>Please enter a number between 5 and 10</p>
+<input id="Demo" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+<script>
+function myFunction() {
+    const message = document.getElementById("p01");// this to be learned
+    message.innerHTML = "";// this to be learned!!!
+    
+    let x = document.getElementById("Demo").value;
+    try {
+        if (x.trim() === "") throw "is empty";
+        if (isNaN(x)) throw "is not a number";
+        
+        x = Number(x);
+        if (x > 10) throw "is too high";
+        if (x < 5) throw "is too low";
+        
+        message.innerHTML = "Input is valid!";
+    
+    } catch (err) {
+        message.innerHTML = "Error: " + err;
+    } finally {
+        document.getElementById("Demo").value = "";
+    }
+}
+</script>
+
+</body>
+</html>```
+<!-- //////////////////checking for second arg and throwing errors////-->
+<script>
+function divide(a,b)
+{
+    if(b === 0)
+    {
+        throw "Division by 0 not possible";
+    }
+    console.log("result is ",a/b);
+}
+divide(15,3);
+</script>
