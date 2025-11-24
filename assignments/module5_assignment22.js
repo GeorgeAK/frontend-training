@@ -85,20 +85,22 @@
 // //console.log(checkprime(num)?"Prime Number":"Not Prime");
 
 /////////////////5./////////fibonacci number/////////////
-// arr[5] = [0];
-// function findfib(num)
-// {
-//     if(num == 0 || num == 1)
-//         return(num)
-//     return(findfib(num -1)+findfib(num - 2))
-// }
-// function findfibupto(num)
-// {
-//     //arr[5] = [0]; //={0}
-//     for(let n = 0;n<num;n++)
-//         arr[n] = findfib(n)
-//     //return(arr)
-// }
+let arr = [0,0,0,0,0,0,0,0,0,0]
+function findfib(num)
+{
+    if(num == 0 || num == 1)
+        return(num)
+    return(findfib(num -1)+findfib(num - 2))
+}
+function findfibupto(num)
+{
+    //arr[5] = [0]; //={0}
+    for(let n = 0;n<num;n++)
+        arr[n] = findfib(n)
+    //return(arr)
+}
+findfibupto(10)
+console.log(arr)
 
 // let num = 5;
 // marr[5] =[0]
@@ -106,11 +108,11 @@
 // //console.log("fib of ",num ,"is ",findfib(num));
 // print(marr)
 
-function findfib(num)
-{
-    if(num == 0 || num == 1)
-        return(num)
-    return(findfib(num -1)+findfib(num - 2))
-}
-let num = 5;
-console.log(findfib(num))
+// function findfib(num)
+// {
+//     if(num == 0 || num == 1)
+//         return(num)
+//     return(findfib(num -1)+findfib(num - 2))
+// }
+// let num = 5;
+// console.log(findfib(num))
