@@ -641,14 +641,14 @@
 // let temps
 // let meanTemp
 // let sum =0
-// function getMeanTemp(temperatures)
-// {
-//     sum = 0
-//     for(i = 0;i<temperatures.length;i++)
-//         sum = sum + temperatures[i]
-//     //meanTemp = sum/temperatures.length;
-//     return(sum/temperatures.length)
-// }
+function getMeanTemp(temperatures)
+{
+    sum = 0
+    for(i = 0;i<temperatures.length;i++)
+        sum = sum + temperatures[i]
+    //meanTemp = sum/temperatures.length;
+    return(sum/temperatures.length)
+}
 
 // temperatures = [12, 12, 11, 11, 10, 9, 9, 10, 12, 13, 15, 18, 21, 24, 24, 23, 25, 25, 23, 21, 20, 19, 17, 16]
 // meanTemp = getMeanTemp(temperatures)
@@ -722,13 +722,852 @@
 // test(1)
 // console.log("outside a = ",a,"b = ",b,"c = ",c)
 
-function showMessage(message)
+// function showMessage(message)
+// {
+//     console.log(`Message: ${message}`)
+// }
+// console.log(showMessage)
+// let sm = showMessage/// a function (call) is equated to a variable
+// console.log("sm =",sm)
+// sm("sm")// here sm means a call to showMessage function, argument being "sm"
+// showMessage("ShowMessage")///// understand this clearly// another clear call of shlow Message
+// // function, with argument as "showMessage"
+
+
+// function doNothing()
+// {
+//     return undefined
+// }
+// let a = doNothing()// result of funtin assigned
+// let b = doNothing// funciton name assigned to
+// console.log(typeof a)
+// console.log(typeof b)
+
+
+// function add(a,b)
+// {
+//     return(a+b)
+// }
+// function multiply(a,b)
+// {
+//     return(a*b)
+// }
+//  function operation(func,first,second)
+// {
+//     return(func(first,second))
+// }
+// console.log(operation(add,10,20))
+// console.log(operation(multiply,10,20))
+
+
+// let myadd = function(a,b)// making a named function
+// {
+//     return(a+b)
+// }
+// console.log(myadd(20,40))// calling a named function
+//console.log(operation(function(a,b){    return a+b},40,60))// no name is 
+// is given to this function. yet this function is called and
+// executed
+//console.log(operation
+// function getMeanTemp(temperature)
+// {
+//     if(!temperature instanceof Array)// validation of arguments
+//         return(NaN)
+//     let sum = 0;
+//     for(let i = 0;i<temperature.length;i++)
+//         sum = sum + temperature[i]
+//     return(sum/temperature.length)
+// }
+// console.log(getMeanTemp([20,30,45]))
+//console.log(oper(getMeanTemp,[20,30,45]))   // do this too
+
+// function add(a,b)
+// {
+//     if(typeof a !== "number" || typeof b !== "number")
+//         return("Invalid input: numbers expected")
+//     return(a+b)
+// }
+// console.log(operation(add,"ten",20))
+
+
+// function add(a,b)
+// {
+//     return(a+b)
+// }
+// function multiply(a,b)
+// {
+//     return(a*b)
+// }
+// function oper(func,first,second)
+// {
+//     return(func(first,second))
+// }
+// console.log(oper(add,10,20))
+// console.log(oper(multiply,10,20))
+// in the place of operation, we can use oper or any word consistently
+
+// let inner = function()
+// {
+//     console.log("Inner 1");
+// }
+// let outer = function (callback)
+// {
+//     console.log("outer 1")
+//     callback()
+//     console.log("outer 2")
+// }
+// console.log("test 1")
+// outer(inner);
+// console.log("test 2")
+
+// function calculate (a,b,operation)
+// {
+//     return(operation(a,b))
+// }
+// function add (x,y)
+// {
+//     return(x+y)
+// }
+// function subtract(x,y)
+// {
+//     return(x-y)
+// }
+// console.log(calculate(5,3,add))
+// console.log(calculate(5,3,subtract))
+
+// console.log("start")
+// setTimeout(function()//anonymous function
+// {
+//     console.log("This one runs in 5 second")
+// },5000)
+// console.log("end")
+// let counter = 0
+// console.log("Start")
+// let intervalId = setInterval(function()
+// {
+//     console.log("Repeating ",++counter)
+// },2000)
+// setTimeout(function()
+// {
+//     clearInterval(intervalId);
+//     console.log("Stopped");
+// },5500)
+// console.log("end")
+// window.addEventListener("click",function()
+// {
+//     console.log("clicked")
+// })
+
+// filter method
+// let arr = [1,2,3,4,5,6,7,8,9,10];
+// //print(arr)
+// let evenarr = arr.filter(function(element)
+// {
+//     if(element%2 === 0)
+//         return true
+//     return false
+// })
+// console.log(arr)
+// console.log(evenarr)
+// filter function 2
+// let arr = ["Aditya","Diksha","Sandeep","George","Thomas"]
+// let sel = arr.filter(function(elem)
+// {    
+// //    if(elem  == "Aditya"|| elem == "Diksha")
+//     if(elem  !== "Aditya"&& elem !== "Diksha")
+//     {
+//         return true
+//     }
+//     return false
+// })
+// console.log(sel)
+
+// let arr = ["Aditya","Diksha","Sandeep","George","Thomas"]
+// let sel = arr.map(function(elem)
+// {    
+//     if(elem  == "Aditya")
+//     {
+//         return "Aditya Gupta"
+//     }
+//     return elem + "---"
+// })
+// console.log(sel)
+///try with numeric value/// done
+
+// let arr = [3,5,7,1,8,9,4]
+// let sel = arr.map(function (elem)
+//     {
+//         if (elem < 6) 
+//             return(elem+3)
+//         return(elem)
+//     })
+// console.log(arr)
+// console.log(sel)
+
+// function sum(a,b)  // Arrow funciton like inline function
+// {
+//     return(a + b)
+// }
+// console.log(sum(5,3))
+// let newSum = (a,b) =>a+b
+// console.log(newSum(5,4))
+// /// in arrows if {} used then return statement needed
+
+let names=["Alice","Eve","John"]
+// function showName(element)
+// {
+//     console.log(element)
+// }
+// names.forEach(showName)
+
+// let showName= (element)=>console.log(element)
+// names.forEach(showName)// jh
+
+// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let myFunction = (element) => console.log(element + 11)
+// arr.forEach(myFunction)
+// console.log(arr)
+
+// let square = x => x*x
+// console.log(square(5))
+
+// function factorial(n)
+// {
+//     return n > 1 ? n*factorial(n-1):1
+// }
+// console.log(factorial(5))
+
+// function factorial(n)
+// {
+//     let result = 1
+//     while(n > 1)
+//     {
+//         result *= n
+//         n--
+//     }
+//     return(result)
+// }
+// console.log(factorial(4))
+
+
+// let count = 1
+// setintervalID = setInterval(()=>
+// {
+//     console.log(count++)
+// },1000);
+// setTimeout(()=>
+// {
+//     clearInterval(intervalID)
+// },(10*1000)+100)
+
+
+// try
+// {
+//     console.log("Starting of try")
+//     let a = 10
+//     console.lg(a/0) // from here it went out thru the catch error window
+//     console.log("Ending of Try")
+// }
+// catch(error)
+// {
+//       console.log("starting of catch")
+//       console.log(error)
+//       console.log("ending of catch")
+// }
+
+// let arr = 1//[1,2,3,4,5]
+// if (arr instanceof Array)
+//     console.log("Yes we got an array")
+// else
+//     console.log("Not an array")
+// let a = -2
+// try
+// {
+//     a = b
+// }
+// catch(error)
+// {
+//     if(error instanceof ReferenceError)
+//     {
+//         console.log("Reference Error",error)
+//         a = 2
+//     }
+//     else
+//     {
+//         console.log("Other Errroe"+ error)
+//     }
+// }
+// finally
+// {
+//     console.log("finally a = ",a)
+// }
+
+// console.log(" outside a = ",a)
+
+// let a = -2
+// try
+// {
+//     a = b
+// }
+// catch(error)
+// {
+//     try
+//     {
+//         console.log(b)
+//     }
+//     catch(error2)
+//     {
+//         console.log("second catech",error2)
+//     }
+// }
+// finally
+// {
+//     console.log("Finally")
+// }
+// console.log("stary")
+// throw(100)
+// console.log("End")
+
+// console.log("start")
+// throw(ReferenceError("this is a reference eroor"))
+// console.log("End")
+
+// console.log("start")
+// try
+// {
+//     console.log(100)
+// }
+// catch(error)
+// {
+//     console.log(error)
+// }
+// console.log("end")
+
+
+// function factorial(n)
+// {
+//     if(n>20)
+//     {
+//         throw new RangeError("Max Value 20")
+//         }
+//     let result = 1
+//     for(;n>1;n--)
+//         result*=n
+//     return(result)
+// }
+// console.log(factorial(3))
+// console.log(factorial(5))
+// console.log(factorial(8))
+// console.log(factorial(20))
+// console.log(factorial(1000))
+
+
+// function average(a,b)
+// {
+//     return(a+b/2)
+// }
+// console.log(average(2,10))
+// console.log(average(5,5))
+
+// function largest(a,b,c)
+// {
+//     if(a>b && a>c)
+//         return(a)
+//     else if(b>a && b>c)
+//         return(b)
+//     else
+//         return(c)
+// }
+// console.log(largest(1,2,3))
+// console.log(largest(1,2,3));
+// console.log(largest(3,2,1));
+// console.log(largest(2,2,1));
+// console.log("befoer debugger")
+// debugger
+// console.log("After Debugger")
+
+// function outer()
+// {
+//     let name = "outer"
+//     let str = "inner"
+//     return str
+// }
+// function inner()
+// {
+//     let name = "inner"
+//     return "Hello !"
+// }
+// console.log("Before Outer call")
+// debugger
+// console.log(outer())
+// console.log("Afgter outer() call")
+
+//// assignment nov 14
+// function divid(a,b)
+// {
+//     try
+//     {
+//         c = a/b
+//     }
+//     catch(error1)
+//     {
+//         if(b == 0)
+//         {
+//             throw "Division by Zero"
+//         }
+//         Finally
+//         {
+//             console.log("result =",c);
+//         }
+//     }
+// }
+// divid(12,2)
+
+// let part = 0;
+// console.time("Leibniz")
+// for(let k= 0;k<10000000;k++)
+//     part = part + (-1)**k/(2*k+1)
+// console.timeEnd("Leibniz")
+// let pi = part * 4;
+// console.log(pi)
+
+// let end = 2;
+// for(let i=1;i<end;i++)
+// {
+//     console.log(i);
+// }
+
+// let contact = {}
+// console.log("contact = ",contact)
+// console.log("type = ",typeof contact)
+// contact.tel ="9496-998769"
+// console.log("contact = ",contact)
+// console.log("tel = ",contact.tel)
+// console.log("type = ",typeof contact)
+// console.log("tel = ",contact.tel)
+// contact["#code"] = 123// use the [] and "" for such things
+// console.log(contact["#code"])
+// contact["email.work"] = "abcd@gmail.com"
+// contact["email.personal"] = "efgh@gmail.com"
+// console.log(contact["email.work"])
+// console.log(contact["email.personal"])
+// console.log(contact.email)
+// //contact."first name" = "George"///error  need [ and string]
+// contact["first name"] = "George"
+// console.log(contact["first name"])
+
+// let contact =
+// {
+//     email_1: "abcd@gmail.com",
+//     email_2: "efgh@gmail.com"
+// };
+// for(i = 1;i<=2;i++)
+// {
+//     let key = "email_"+i
+//     console.log(key)
+//     console.log(contact[key])
+// }
+
+// let contact ={}
+// let email = prompt("Enter email")
+// let count = 1
+// while(email)
+// {
+//     contact["email_"+count] = email
+//     count++
+//     email = prompt("Enter email")
+// }
+// console.log("contact = ",contact)
+// for(let count1 = 1;count1<=Object.keys(contact).length;count1++)
+//     console.log(contact["email_"+count1])
+
+
+// let test = 
+// {
+//     nr:10,
+//     b:false,
+//     str: "George",
+//     arr: [10,20,30],
+//     obj: 
+//     {
+//          x:10,
+//          y:20,
+//     },
+//     fn: function(arg){ console.log(arg)}
+// };
+// test.fn(123)
+// console.log("1 index",test.arr[1])
+// console.log("y from object of obj",test.obj.y)
+// console.log("string from ",test.str)
+// console.log("number from object ",test.nr)
+// console.log("boolean ",test.b)
+
+// let point =
+// {
+//     x:0,
+//     y:0,
+//     moveHorizontally:function(distance)
+//     {
+//         this.x = this.x + distance
+//     },
+//     moveVertically:function(distance)
+//     {
+//         this.y = this.y+distance
+//     }
+// }
+// console.log(point.x)
+// point.moveHorizontally(30)
+// console.log(point.x)
+
+// let contact = 
+// {
+//     tel:"45 56 98",
+//     email:"gathappilly200@gmail.com"
+// }
+// console.log("tel =",contact.tel)
+// console.log("email =",contact.email)
+// contact.email = ["gathappilly@gmail.com","abcd@gmail.com"]
+// console.log("email 0 = ",contact.email[0])
+// console.log("email 1 = ",contact.email[1])
+// contact.email = 
+// {
+//     private: "abc",
+//     work:"xyz"
+// };
+// console.log("contact.private email =",contact.email.private)
+// console.log("contact.work email =",contact.email.work)
+// delete contact.email.work
+// console.log("contact.work email =",contact.email.work)
+// if(contact.email.work)// when work email is not there, this if evaluates to false
+// {
+//     console.log("this is if working")
+// }
+// if("private" in contact.email)
+// {
+//     console.log("This is private email",contact.email.private)
+// }
+
+
+// let contact = 
+// {
+//     tel:"45 56 98",
+//     email:"gathappilly200@gmail.com"
+// };
+// for (x in contact)
+//     console.log(x)
+//     console.log(x+ ":",contact[x])
+// let propArr = Object.keys(contact)
+// console.log(propArr)
+// con
+
+// const contact = 
+// {
+//     tel:"45 56 98",
+//     email:"gathappilly200@gmail.com"
+// };
+// //contact = {} not allowed
+// contact.tel = "123456"
+// contact.name= "George"
+// for (x in contact)
+//     console.log(x)
+//     console.log(x+ ":",contact[x])
+// let propArr = Object.keys(contact)
+// console.log(propArr)
+
+
+// const make the object not equatable to another object
+// but deleting or modifyong a property is possible
+//// === compares value and type
+/// == compares only the value
+// var point1={x:10,y:20};
+// var point2={x:10,y:20};
+// console.log(point1 === point2)// false
+// let point3 = point1
+// point1.x = 30
+// console.log(point1.x)
+// console.log(point3.x)
+// console.log(point1 === point3)// true
+
+
+// var point11={x:10,y:20};
+// var point2={x:10,y:20};
+// point11 = point11;
+// let point3 = {}
+// Object.assign(point3,point11)
+// console.log(point3.x)
+// console.log(point2.y)
+// point11.x = 30
+// point11.y = 50
+// console.log("point11.x",point11.x)
+// console.log("point11.y",point11.y)
+
+// console.log("point2.x",point2.x)
+// console.log("point2.y",point2.y)
+
+// console.log(point11 === point11)
+// console.log(point2 === point2)
+
+// var point0={x:10,y:20};
+// var point1={x:10,y:20};
+// point1 = point0;//only an alias or addresses the same
+// let point3 = {}
+// Object.assign(point3,point0)// strictly different copies
+// console.log(point3.x)
+// console.log(point3.y)
+// point1.x = 30
+// point1.y = 50
+// console.log("point0.x",point0.x)
+// console.log("point0.y",point0.y)
+
+// console.log("point1.x",point1.x)
+// console.log("point1.y",point1.y)
+
+// console.log(point3 === point0)// not strictly the same
+// console.log(point3 == point0)// even otherwise not same
+
+// console.log(point1 === point0)// not strictly the same
+// console.log(point1 == point0)// even otherwise not same
+
+
+// var point0={x:10,y:20};
+// var point1={x:10,y:20};
+// point1 = point0;//only an alias or addresses the same
+// let point3 = {}
+// Object.assign(point3,point0)// strictly different copies 3 and 0
+// console.log("point3.x ",point3.x)
+// console.log("point3.y ",point3.y)
+
+// let point4={}
+// Object.assign(point4,point1,z= 100)
+// console.log(point4)
+// point0.x = 30
+// point0.y = 50
+// console.log("new point0.x",point0.x)//
+// console.log("new point0.y",point0.y)
+
+// // console.log("point1.x",point1.x)
+// // console.log("point1.y",point1.y)
+
+// console.log("point 3 and 0 strictly", point3 === point0)// not strictly the same
+// console.log("point 3 and 0 not strictly",point3 == point0)// even otherwise not same
+
+// // console.log(point1 === point0)// not strictly the same
+// // console.log(point1 == point0)// even otherwise not same
+
+// console.log("point 1 and 0 strictly", point1 === point0)// not strictly the same
+// console.log("point 1 and 0 not strictly",point1 == point0)// even otherwise not same
+
+// var point1={x:10,y:20};
+
+// let contact = 
+// {
+//     tel:"45 56 98",
+//     email:"gathappilly200@gmail.com",
+//     point1
+// };
+
+// let contact1 = contact
+// console.log(" ",contact)
+// console.log("1",contact1)
+// console.log("contact1==contact", contact1== contact)
+// console.log("contact1===contact", contact1=== contact)
+
+// contact3 = {}
+// Object.assign(contact3,contact)
+// console.log("contact3==contact", contact3== contact)
+// console.log("contact3===contact", contact3=== contact)
+
+
+// var point0={x:10,y:20};
+// var point1={x:10,y:20};
+// point1 = point0;//only an alias or addresses the same
+// let point3 = {}
+// Object.assign(point3,point0)// strictly different copies 3 and 0
+// console.log("point3.x ",point3.x)
+// console.log("point3.y ",point3.y)
+
+// let point4={}
+// let point5 = {}
+// Object.assign(point4,point1,{z: 100})
+// console.log("point4 = ",point4)
+// //z is added to point4
+// Object.assign(point5,point4,{z : 120,color:"red"})// if same key overwrite from left to right
+// console.log("point5 = ",point5)
+// let point6 ={}
+
+// point6={...point5}// spreader operator spreads/explods the qualities and assigns
+// console.log("point6 = ",point6)
+// console.log("point6 === point6",point6===point5)//gets false. means are different
+
+// let arr1 =[1,2,3,4]
+// let arr2 = [5,6,7,8]
+// let comarr=[...arr1,...arr2]
+// console.log(arr1);
+// console.log(arr2);
+// console.log(comarr);
+// comarr=[10,11,12,...arr1,30,40]
+// console.log(comarr);
+// comarr=[10,11,12,...arr1]
+// console.log(comarr);
+// comarr=[...arr1,50,60]
+// console.log(comarr);
+// /// spreader ... works both for objects and arrays
+// /// first or second or in btween the array can be kept
+
+
+// function sum(a,b,c)
+// {
+//     return(a+b+c)
+// }
+// let arr = [3,4,5]
+// let val = sum(...arr)// the spread values of arr are sent as args to sum
+// console.log("sum = ",val)
+
+// let str = "George"
+// let chararr =[...str]/// str gets spread into chararr
+// console.log(chararr)
+
+
+// let obj = {
+//     x:10,
+//     y:20,
+//     z:
+//     {
+//         a: 100,
+//         b: 200
+//     }
+// }
+// let obj1={}
+// Object.assign(obj1,obj)
+// console.log("obj = ",obj)
+// console.log("obj1 = ",obj1)
+// console.log("obj === obj1",obj===obj1)
+// obj.z.a = 150// inner element not changed
+// obj.x = 15// outer element changed
+// console.log("changing z.a to 150")
+// console.log("changing x to 15")
+// console.log("obj =",obj)
+// console.log("obj1 =",obj1)
+
+
+
+// let deepClone = function(obj)
+// {
+//     let newObj = {...obj}
+//     for(property in newObj)
+//     {
+//         if(typeof(newObj[property] === "object"))
+//         {
+//             newObj[property]=deepClone(newObj[property])
+//         }
+//     }
+// }
+// let obj = {
+//     x:10,
+//     y:20,
+//     z:
+//     {
+//         a: 100,
+//         b: 200
+//     }
+// }
+// let obj1={}
+// obj1= deepClone(obj)
+// console.log(obj1===obj)
+// console.log(obj)
+// console.log(obj1)
+
+
+/// 27 11 25
+// let circle =
+// {
+//     radius:100,
+//     center:
+//     {
+//         x:0,
+//         y:10
+//     },
+//     // gettype: function()
+//     gettype()/// in deep cloning, the inner classes also get completely
+//     // copied separately.else the inner classes are copied only as reference
+//     {
+//         //return("circle")
+//         return(typeof circle.radius === "number")?"circle":"Unknown"
+//     },/// if circle is used, radius is given as abc but if this, unknown
+//     // comes which is right
+//     getradius()
+//     {
+//         return(this.radius)// this points to the actual context
+//     }
+// };
+// console.log(circle.radius)
+// console.log("circle center x ",circle.center.x)
+// //console.log("type is ",circle.gettype())// here the more general 
+// // higher context may be referred
+// console.log("type",circle["gettype"]())
+// let circle1 = {...circle}
+// circle1.radius = "abc"
+// console.log("radius",circle1.getradius())
+// console.log("type ",circle1.gettype())
+
+
+// let contact = 
+// {
+//     _tel : 233453456,
+//     get tel()
+//     {
+//         console.log("tel = ")
+//         return(this._tel)
+//     },
+//     set tel(t)
+//     {
+//         console.log('using setter')
+//         this._tel = t
+//     }
+// };
+// console.log(contact.tel)
+// contact.tel = "1000000"
+// console.log(contact.tel)
+// contact.email = "abcd.gmail.com"
+// console.log("contact emali = ",contact.email)
+
+
+let contact = 
 {
-    console.log(`Message: ${message}`)
-}
-console.log(showMessage)
-let sm = showMessage/// a function (call) is equated to a variable
-console.log("sm =",sm)
-sm("sm")// here sm means a call to showMessage function, argument being "sm"
-showMessage("ShowMessage")///// understand this clearly// another clear call of shlow Message
-// function, with argument as "showMessage"
+    _tel : 233453456,
+    _age:36,
+    _firstname:"george",
+    _lastname:"Athappilly",
+    get fullname()
+    {
+        return `${this._firstname}," ",${this._lastname}`
+    },
+    get age()
+    {
+        return(this._age)
+    },
+    get tel()
+    {
+        console.log("tel = ")
+        return(this._tel)
+    },
+    set tel(t)
+    {
+        console.log('using setter')
+        this._tel = t
+    },
+    set age(a)
+    {
+        if (a > 0)
+            this._age = a
+        else
+            console.log("setting negaive age")
+    }
+};
+console.log(contact.fullname)
+contact.tel = "1000000"
+contact.age = -20
+console.log(contact.age)
+console.log(contact.tel)
+contact.email = "abcd.gmail.com"
+console.log("contact emali = ",contact.email)
