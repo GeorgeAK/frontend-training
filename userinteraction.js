@@ -7,17 +7,17 @@
                 // {
                 //     let decision = window.confirm("is it ok?")
                 //     console.log(decision)
-                // }
-                // function confirmDialog1()//confirmDialog1()
-                // {
-                //     let remove = confirm("remove data")
-                //     let message = remove?"Deleting Data":"Cancelled1"
-                //     console.log(message)
-                // }
+                // }//confirmDialog1
+                function confirmDialog1()//confirmDialog1()
+                {
+                    let remove = confirm("remove data")
+                    let message = remove?"Deleting Data":"Cancelled1"
+                    console.log(message)
+                }
                 // function promptDialogeExample()
                 // {
                 //     let name = window.prompt("what is your name ","George")
-                //     name = name ? name: "anonymouse"
+                //     name = name ? name: "anonymous"
                 //     let age = prompt("Hello" + name  + "How old are you?")
                 //     alert(name+ "is " + age + "old")
                 // }
@@ -1532,42 +1532,209 @@ let names=["Alice","Eve","John"]
 // console.log("contact emali = ",contact.email)
 
 
-let contact = 
+// let contact = 
+// {
+//     _tel : 233453456,
+//     _age:36,
+//     _firstname:"george",
+//     _lastname:"Athappilly",
+//     get fullname()
+//     {
+//         return `${this._firstname}," ",${this._lastname}`
+//     },
+//     get age()
+//     {
+//         return(this._age)
+//     },
+//     get tel()
+//     {
+//         console.log("tel = ")
+//         return(this._tel)
+//     },
+//     set tel(t)
+//     {
+//         console.log('using setter')
+//         this._tel = t
+//     },
+//     set age(a)
+//     {
+//         if (a > 0)
+//             this._age = a
+//         else
+//             console.log("setting negaive age")
+//     }
+// };
+// console.log(contact.fullname)
+// contact.tel = "1000000"
+// contact.age = -20
+// console.log(contact.age)
+// console.log(contact.tel)
+// contact.email = "abcd.gmail.com"
+// console.log("contact emali = ",contact.email)
+
+
+
+// function promptDialogeExample()
+// {
+//     let name = window.prompt("what is your name ","George")
+//     name = name ? name: "anonymous"
+//     let age = prompt("Hello" + name  + "How old are you?")
+//     alert(name+ "is " + age + "old")
+// }
+
+// let contact = 
+// {
+//     age : 36,
+//     firstname: "Athappilly",
+//     lastname: "George",
+//     getfullname()
+//     {return(`${this.firstname} ${this.lastname}`)},
+//     getage()
+//     {
+//     return(this.age)
+//     },
+//     setage(a)
+//     {
+//         if(a>0) this.age = a
+//     }
+// };
+// let keys = Object.keys(contact);
+// console.log("keys = ",keys);
+// let desc = Object.getOwnPropertyDescriptor(contact,"age");
+// console.log("age descriptor = ",desc);
+// Object.defineProperty(contact,"age",
+// {
+//     value:34,
+// writable:true,
+// enumerable:false,
+// configurable:true});
+// keys = Object.keys(contact)
+// console.log("keys ",keys)
+// desc = Object.getOwnPropertyDescriptor(contact,"age");
+// console.log("age descriptor = ",desc);
+// /// as the age is made not changeable, age = 100 is not accepted
+// Object.defineProperty(contact,"age",
+// {
+//     value:34,
+// writable:false,
+// enumerable:false,
+// configurable:true});
+// keys = Object.keys(contact)
+// console.log("keys ",keys)
+// desc = Object.getOwnPropertyDescriptor(contact,"age");
+// console.log("age descriptor = ",desc);
+// contact.age = 100
+// console.log("new age = ",contact.age)
+// //// getownpropeties, will give all properties
+// //// in enum, the enumerables, alone will be printed
+// //object.keys will give only enumerables
+
+///// let createpoint= (x,y)=>({x,y})//function(x,y)
+// {
+//     let obj = {};
+//     obj.x = x;
+//     obj.y = y;
+//     return(obj);
+// };
+// let point1 = createpoint(1,1);
+// let point2 = createpoint(2,3);
+// console.log("point1 = ",point1);
+// console.log("point2 = ",point2);
+
+// let createcolorpoint = function(x,y,color)
+// {
+//     let _info = "object under construction";
+//     let _color = color;
+//     console.log(_info);
+//     return{
+//         x,
+//         y,
+//         getcolor()
+//         {
+//         return(_color)}
+//     }
+// }
+// let coloredpoint1 = createcolorpoint(1,1,"red");
+// let coloredpoint2 = createcolorpoint(2,2,"green");
+// console.log("coloredpoint 1,getcolor ",coloredpoint1.getcolor());
+// console.log("coloredpoint 2,getcolor ",coloredpoint2.getcolor());
+// console.log("coloredpoint 1,_color ",coloredpoint1._color);
+
+
+// let createcolorpoint = function(x,y,color)
+// {
+//     let _info = "object under construction";
+//     let _color = color;
+//     console.log(_info);
+    
+//     this.x = x,
+//     this.y = y,
+//     this.getcolor =function() 
+//     {
+//         return _color
+//     }
+    
+// }
+// let coloredpoint1 = new createcolorpoint(1,1,"red");
+// let coloredpoint2 = new createcolorpoint(2,2,"green");
+// console.log("coloredpoint 1,getcolor ",coloredpoint1.getcolor());
+// console.log("coloredpoint 2,getcolor ",coloredpoint2.getcolor());
+// console.log("coloredpoint 1,_color ",coloredpoint1._color);
+// console.log("coloredpoint 1 constructior,name ",coloredpoint1.constructor.name)
+// console.log("coloredpoint 1 constructior ",coloredpoint1.constructor)//
+// console.log("type of coloredpoint 1 constructior ",typeof coloredpoint1.constructor)
+//// constructor is a function
+/// constructior method, has the benefit that the private _properties will
+// automatically be unaccessible 
+
+// let reallyEmptyObject = Object.create(null)
+// console.log("really empty object = ",reallyEmptyObject)
+// console.log("type of reallyEO constructor = ",typeof reallyEmptyObject.constructor)
+
+// let point = {x:0,y:0};
+// let coloredpoint = {color:"red"};
+// coloredpoint.__proto__ = point;
+// console.log("point proto = ",point,__proto__);
+// console.log("colored point proto = ",coloredpoint,__proto__);
+// console.log("point =",point);
+// console.log("colored point =",coloredpoint);
+// console.log("object propetiy by name ",Object.getOwnPropertyNames(coloredpoint))//.getproperty
+// console.log("color = ",coloredpoint.color);
+// console.log("x = ",coloredpoint.x);
+
+// let figure = 
+// {
+//     getType :function()
+//     {
+//         return this.type?this.type:"Undefined";
+//     }
+// };
+// let circle= 
+// {
+//     type:"circle",
+//     center:{x:0,y:0},
+//     radius:100,
+// };
+// //circle.__proto__ = figure//depricated
+// let proto = Object.getPrototypeOf(Circle);
+// console.log("before proto of circle = ",proto);
+// Object.setPrototypeOf(circle,figure)
+// proto = getPrototypeOf(circle);
+// console.log("after proto of circle = ",proto);
+// console.log("gettype = ",circle.getType());
+
+// console.log(1+"2");
+// console.log("1"+2);
+// console.log(1+(-"2"));
+// console.log(1-(-"2"));
+
+
+let testString = new String("One Two Three");
+console.log("teststring length = ",testString.length)
+console.log("case changed  ",testString.toUpperCase())
+// the parent String classe's methods are invoked;
+String.prototype.hi = function()
 {
-    _tel : 233453456,
-    _age:36,
-    _firstname:"george",
-    _lastname:"Athappilly",
-    get fullname()
-    {
-        return `${this._firstname}," ",${this._lastname}`
-    },
-    get age()
-    {
-        return(this._age)
-    },
-    get tel()
-    {
-        console.log("tel = ")
-        return(this._tel)
-    },
-    set tel(t)
-    {
-        console.log('using setter')
-        this._tel = t
-    },
-    set age(a)
-    {
-        if (a > 0)
-            this._age = a
-        else
-            console.log("setting negaive age")
-    }
+    console.log("hi")
 };
-console.log(contact.fullname)
-contact.tel = "1000000"
-contact.age = -20
-console.log(contact.age)
-console.log(contact.tel)
-contact.email = "abcd.gmail.com"
-console.log("contact emali = ",contact.email)
+testString.hi()
