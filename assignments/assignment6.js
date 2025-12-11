@@ -1,118 +1,3 @@
-// let library =[{title: "Speaking JavaScript",author:"Axel Rauschmayer",pages:460},{title:"Programming JavaSriptt Application",author: "Aric Elliott",pages:254},{title:"Understandign ECMAScript 6",author:"Nicholas C. Zakas",pages:352}];
-// console.log(library)
-//  library.push({title:"Learning JavaScript Design Patterns",author: "Addy Osmani",pages:254})
- //////////////////push has not pushed the title propely.
- // in the listing of 4 books now, there is undefinede
-//  console.log("New Libray :",library)
-//  console.log("Libray length:",library.length)
-//  console.log("Books in the library: ");
-//  library.forEach(book=>console.log(book.title))
-
-//  console.log("New Libray :",library)
-//  console.log("Libray length:",library.length)
-//  console.log("Books in the library Authors: ");
-//  library.forEach(book=>console.log(book.author))
-
-// let lastTwoBooks=library.slice(-2);
-// console.log("Last Two books: ");
-// lastTwoBooks.forEach(book=>console.log(book.title));
-// library.shift();
-// console.log("After removeing first book : ");
-// console.log("libray length ",library.length);
-// library.forEach(book=>console.log(book.title));
-// let totalPages = library.reduce((sum,book)=>sum+book.pages,0);
-// console.log("Total pages in collection: ",totalPages);
-
-// console.log("New Libray :",library)
-//  console.log("Libray length:",library.length)
-//  console.log("Books in the library: ");
-//  library.forEach(book=>console.log(book.title))
-
-// console.log("Books in the library pages: ");
-// library.forEach(book=>console.log(book.pages))
-// console.log("Books in the library Authors: ");
-// library.forEach(book=>console.log(book.author))
-// console.log("Books in the library TITLES: ");
-// library.forEach(book=>console.log(book.title))
-
-// let paintings = 
-// [
-//     {title:"Mona Lisa",artist:"Da Vinci", doc:1503},
-//     {title: "The last supper", artist:"Da vinci", doc: 1495},
-//     {title: "The starry night", artist: "Vincent Gough", doc:1889},
-//     {titel: "The scream", author: "David Munch", doc:1893},
-//     { title: "Guernica", author:"Pablo Picasso", doc:1937},
-//     {title: "THe kiss", author:"Gustav Kisk",  doc:1907},
-//     {title:"Teh girl with pearl Earring",author:"Johannas Vermar",doc:1665},
-//     {title: "THe birth of vinus", author:"Sandro Viticelli", doc:1485},
-//     {title:"Las Meninas", author:"Diego Velasques",doc:1656},
-//     {title:"TEH creation of Adam", author:"Michael Angelo", doc:1512}
-// ];
-// paintings.forEach(paintings=>console.log(paintings))
-
-
-
-// let contact = 
-// {
-//     age : 36,
-//     firstname: "Athappilly",
-//     lastname: "George",
-//     getfullname()
-//     {return(`${this.firstname} ${this.lastname}`)},
-//     getage()
-//     {
-//     return(this.age)
-//     },
-//     setage(a)
-//     {
-//         if(a>0) this.age = a
-//     }
-       // return obj;
- //};
-// let keys = Object.keys(contact);
-// console.log("keys = ",keys);
-
-
-// let image = 
-// {
-//     title : "Title",
-//     author: "Author",
-//     doc: "doc",
-//     getfulldetails()
-//     {return(`${this.title} ${this.author} ${this.doc}`)},
-//     //getage()
-//     //{
-//     //return(this.age)
-//     //},
-//     // setage(a)
-//     // {
-//     //     if(a>0) this.age = a
-//     // }
-// };
-
-
-// let createcolorpoint = function(x,y,color)
-// {
-//     let _info = "object under construction";
-//     let _color = color;
-//     console.log(_info);
-    
-//     this.x = x,
-//     this.y = y,
-//     this.getcolor =function() 
-//     {
-//         return _color
-//     }
-    
-// }
-// let coloredpoint1 = new createcolorpoint(1,1,"red");
-// let coloredpoint2 = new createcolorpoint(2,2,"green");
-// console.log("coloredpoint 1,getcolor ",coloredpoint1.getcolor());
-// console.log("coloredpoint 2,getcolor ",coloredpoint2.getcolor());
-
-
-
-
 
 // let createImage = function(title,author,doc)
 // {
@@ -133,9 +18,7 @@
 //     }
 // };
 
-
-// let point1 = createpoint(1,1);
-// let point2 = createpoint(2,3);
+//////////////////////scenario 2 ///////////////////////////////////
 
 class Image
 {
@@ -193,7 +76,7 @@ im1.printDetails();
 // let Image2 = new createImage("the man","AKG",2020);
 // console.log("Image2 details : ",  Image2.getTitle(),Image2.getAuthor(),Image2.getDoc());
 
-
+///////////////////scenario 1 ///////////////////////////////////////
 //let createImage= (title,author,doc)=>({title,author,doc})//function(x,y,z)// factory method
 //let createImage= (title,author,doc) = function(title,author,doc)//function(x,y,z)// factory method
 // function createImage(title,author,doc)
